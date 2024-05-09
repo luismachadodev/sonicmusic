@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonicfy</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bs-dark-bg">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container d-flex align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand me-auto" href="#">
+        <img src="/assets/soniclogo.svg" width="140px">
+      </a>
+      <!-- Toggle Btn -->
+      <button class="navbar-toggler sidebar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Premium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Suporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Baixar</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastrar-se</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="content">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <h1 style="font-weight: bolder; font-size: 42px;">Curta suas músicas ao máximo com o Premium Individual.</h1>
+            <div>
+              Curta músicas sem interrupções com o Sonic Premium.
+            </div>
+            <div>
+              Começando por apenas R$ 21,90. Cancele quando quiser.
+            </div>
+            <div class="buttons">
+              <button id="btn-cad" class="btn btn-primary" type="button" onclick="window.location.href = 'cadastro.html'">Cadastrar-se</button>
+              <button class="btn btn-primary" id="btn-planos" type="button" onclick="scrollPlanos()">Ver todos os planos</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center" id="img-bg" style="padding-top: 50px;">
+            <img src="/assets/6417974-removebg-preview.png" class="img-fluid" style="z-index: -1; max-width: 100%;" >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="container" style="padding-top: 100px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h1>Experimente a diferença</h1>
+        <p class="fw-medium">Seja Premium e tenha controle total da sua conta. Cancele quando quiser.</p>
+        <div class="table-responsive">
+          <table class="table table-custom">
+            <thead>
+              <tr>
+                <th scope="col">Benefícios</th>
+                <th scope="col">Plano Free do Sonicfy</th>
+                <th scope="col">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Música sem anúncios</td>
+                <td>-</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Baixe pra ouvir no modo offline</td>
+                <td>-</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Ouça músicas na ordem que quiser</td>
+                <td>-</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Áudio de qualidade alta</td>
+                <td>-</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Possibilidade de ouvir com os amigos em tempo real</td>
+                <td>-</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>Fila na ordem que você quiser</td>
+                <td>-</td>
+                <td>✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content-2 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div>
+            <h1>Planos acessíveis para qualquer situação</h1>
+            <p>Escolha um plano Premium e ouça música sem anúncios de forma ilimitada no seu celular, alto-falante e em outros dispositivos. Vários métodos de pagamento. Cancele quando quiser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 50px;">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm"  style="background-color: #383838;">
+            <div class="card-header py-3"  style="background-color: #383838;">
+              <h4 class="my-0 fw-normal" style="color: #00FFFF;">Individual</h4>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title pricing-card-title">R$ 21,90/mês</h4>
+              <ul class="list-unstyled mt-3 mb-4 text-start" style="color: white !important;">
+                <li>1 conta Premium</li>
+                <li>Cancele quando quiser</li>
+                <li>Faça uma assinatura ou pague uma vez só</li>
+              </ul>
+              <button id="planoIndividual" type="button" class="w-100 btn btn-lg btn-primary" style="background-color: #0078FF;">Assinar Individual</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3"  style="background-color: #383838;">
+              <h4 class="my-0 fw-normal" style="color: #FFE4C4;">Dupla</h4>
+            </div>
+            <div class="card-body"  style="background-color: #383838;">
+              <h4 class="card-title pricing-card-title">R$ 19,90/mês</h4>
+              <ul class="list-unstyled mt-3 mb-4 text-start" style="color: white !important;">
+                <li>2 contas Premium</li>
+                <li>Cancele quando quiser</li>
+                <li>Faça uma assinatura ou pague uma vez só</li>
+              </ul>
+              <button id="planoDupla" type="button" class="w-100 btn btn-lg btn-primary" style="background-color: #0078FF;">Assinar Dupla</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm"  style="background-color: #383838;">
+            <div class="card-header py-3"  style="background-color: #383838;">
+              <h4 class="my-0 fw-normal" style="color: #FF6161;">Família</h4>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title pricing-card-title">R$ 34,90/mês</h4>
+              <ul class="list-unstyled mt-3 mb-4 text-start" style="color: white !important;">
+                <li>Até 6 contas Premium ou Kids</li>
+                <li>Cancele quando quiser</li>
+                <li>Faça uma assinatura ou pague uma vez só</li>
+              </ul>
+              <button id="planoFamilia" type="button" class="w-100 btn btn-lg btn-primary" style="background-color: #0078FF;">Assinar Família</button>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-3">
+          <div class="card" id="cardPlano" style="display: none;">
+            <div class="card-body">
+              <h5 class="card-title">Plano Selecionado</h5>
+              <p class="card-text" id="planoSelecionado"></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 80px;">
+    <div class="container">
+      <div class="text-center">
+        <h2>Alguma dúvida?</h2>
+        <span>Temos respostas que podem ajudar.</span>
+      </div>
+      <div class="accordion" style="padding-top: 50px;">
+        <div class="accordion-item" style="background-color: #242424 !important;">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              Como faço para me inscrever no Sonicfy?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent=".accordion">
+            <div class="accordion-body">
+              Para se inscrever no Sonicfy, basta visitar a página de assinatura no site oficial do Sonicfy e selecionar o plano Premium. Você precisará fornecer suas informações de pagamento e seguir as instruções na tela para concluir o processo de inscrição.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: #242424 !important;">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              O Sonicfy tem um período de avaliação gratuita?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent=".accordion">
+            <div class="accordion-body">
+              Sim, o Sonicfy oferece um período de avaliação gratuita para o Sonicfy Premium. Durante este período, você terá acesso a todos os recursos do Premium sem nenhum custo. Após o período de avaliação, sua assinatura será automaticamente renovada e você será cobrado pelo serviço, a menos que cancele antes do término da avaliação.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: #242424 !important;">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Posso cancelar minha assinatura do Sonicfy Premium a qualquer momento?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent=".accordion">
+            <div class="accordion-body">
+              Sim, você pode cancelar sua assinatura do Sonicfy Premium a qualquer momento. Basta acessar sua conta no site oficial do Sonicfy, ir para as configurações de assinatura e seguir as instruções para cancelar sua assinatura. Após o cancelamento, você ainda terá acesso ao Sonicfy Premium até o final do período de cobrança atual.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: black;">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="/assets/soniclogo.svg" width="132px">
+          </a>
+        </div>
+    
+        <div class="col mb-2">
+    
+        </div>
+    
+        <div class="col mb-2" style="font-size: 14px;">
+          <h5>Empresa</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-2" style="font-size: 14px;">
+          <h5>Sobre</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-2" style="font-size: 14px;">
+          <h5>Planos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Planos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="text-center" style="opacity: 50%;">
+        Sonic @ Todos os direitos reservados.
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

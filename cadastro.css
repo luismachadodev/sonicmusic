@@ -1,0 +1,32 @@
+:root {
+  --bs-dark-bg: #121212;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: white !important;
+  height: 100vh;
+}
+
+[data-bs-theme="dark"] body {
+  background-color: var(--bs-dark-bg) !important; /* Altera a cor de fundo do modo escuro */
+}
+
+[data-bs-theme="dark"] .navbar-dark .navbar-nav .nav-link {
+  color: white; /* Cor do texto do link no modo escuro */
+}
+
+[data-bs-theme="dark"] .navbar-dark .navbar-nav .nav-link:hover {
+  color: #0078FF; /* Cor do texto do link ao passar o mouse no modo escuro */
+}
+
+[data-bs-theme="dark"] .navbar-dark {
+  background-color: black; /* Cor de fundo do navbar no modo escuro */
+}
+
+
+@media (min-width: 767.98px) {
+  .container {
+    width: 50% !important;
+  }
+}

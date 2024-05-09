@@ -1,0 +1,126 @@
+:root {
+  --bs-dark-bg: #121212;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: white !important;
+  height: 100vh;
+}
+
+[data-bs-theme="dark"] body {
+  background-color: var(--bs-dark-bg) !important; /* Altera a cor de fundo do modo escuro */
+}
+
+[data-bs-theme="dark"] .navbar-dark .navbar-nav .nav-link {
+  color: white; /* Cor do texto do link no modo escuro */
+}
+
+[data-bs-theme="dark"] .navbar-dark .navbar-nav .nav-link:hover {
+  color: #0078FF; /* Cor do texto do link ao passar o mouse no modo escuro */
+}
+
+[data-bs-theme="dark"] .navbar-dark {
+  background-color: black; /* Cor de fundo do navbar no modo escuro */
+}
+
+nav ul li:nth-child(3) a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px; 
+  background-color: white;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+#btn-cad {
+  color: black;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 12px 60px;
+  transition: transform 0.3s ease;
+  border: 0;
+}
+
+#btn-cad:hover {
+  transform: scale(1.1);
+}
+
+#btn-planos {
+  background: #000;
+  border: 0;
+  border-radius: 24px;
+  font-weight: bold;
+  padding: 12px 60px;
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+#btn-planos:hover {
+  transform: scale(1.1);
+}
+
+.content-2 {
+  padding-top: 80px;
+}
+
+  /* Estilo para a tabela */
+  .table-custom {
+    background-color: #000;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .table-custom th,
+  .table-custom td {
+    border: 0px solid #bbbbbb;
+    padding: 12px;
+    text-align: center;
+    color: #bebebe;
+    background-color: var(--bs-dark-bg) !important;
+  }
+  
+  .accordion-button {
+    color:  white !important; /* Cor do texto cinza escuro */
+    background: #121212 !important;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+  
+  .accordion-button:hover {
+    text-decoration: underline; /* Sublinhar texto ao passar o mouse */
+  }
+
+  .accordion-item {
+    box-shadow: none !important; /* Remover a borda branca */
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+
+@media (max-width: 767.98px) {
+  .content {
+    padding-top: 35px;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  #btn-planos {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+
+  nav ul li:nth-child(3) a::after {
+   display: none;
+  }
+}
+
